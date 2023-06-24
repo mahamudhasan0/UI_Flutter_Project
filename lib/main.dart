@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'bottom_nav_controller.dart';
 
 
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        // textTheme: GoogleFonts.poppinsTextTheme(
+        //   Theme.of(context).textTheme.apply()
+        // ),
         primarySwatch: Colors.blue
       ),
       home: BottomNavController(),

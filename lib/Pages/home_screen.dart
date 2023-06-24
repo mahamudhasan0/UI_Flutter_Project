@@ -47,6 +47,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Oblique Fashion',
+            style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.w600,
+            )
+        ),
+        centerTitle: true,
+      ),
         body: SafeArea(
       child: Padding(
         padding: const EdgeInsets.only(
@@ -60,16 +69,6 @@ class HomeScreen extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Center(
-                      child: Text('Hello',
-                          style: TextStyle(
-                              fontSize: 40, fontWeight: FontWeight.w600)),
-                    ),
-                    const Center(
-                      child: Text('let go for something',
-                          style: TextStyle(
-                              fontSize: 14, color: Color(0xFF4F4C4C))),
-                    ),
                     const SizedBox(height: 20),
                     SizedBox(
                       height: 120,
